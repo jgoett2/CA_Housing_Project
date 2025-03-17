@@ -3,7 +3,7 @@
 This lab shows the importance of location in the pricing of housing in California, showing that location along can account for 75% of the variation in housing prices. 
 - The **first model** considers the house's simple geographic region and accounts for **20%** of the variation in housing price.
 - The **second model** considers the house's distance to large cities and accounts for **25%** of variation.
-- The **final model** considers the price of nearby homes and accounts for **75%** of the variation.
+- The **final model** considers the price of nearby homes and accounts for **79%** of the variation.
 
 This data features of 20,000 blocks of housing in California.  Using this data, we will determine whether location alone can account for variations in housing prices.
 
@@ -41,16 +41,16 @@ Initially, we simply model the housing price as the average housing price for ea
 | Central Valley |                     $107,598 |
 | Other          |                     $162,839 |
 
-This model has a high error due to large variations in housing price within a region.  Below, we see the large variation in housing price in the Los Angeles Area: 
+This model has a high error due to large variations in housing price within a region.  To illustrate, we see the large variation in housing price in just the Los Angeles Area: 
 <img src="img/map_model_one_error.png">
 
 ## Second Simple Model: Inverse Distance to Top Neighborhoods
-Next, we model price on the distance to 11 desirable neighborhoods in California.  The model can account for 31% of the variation in housing price.  Compared to model one, for example, the predictions in model two result in smaller errors and variations.
+Next, we model price on the distance to 11 desirable neighborhoods in California.  The model can account for 31% of the variation in housing price.  To illustrate, we can see that model two results in smaller errors when predicting prices in the Los Angeles Region.  
 
 <img src="img/map_model_two_error.png">
 
 ## Third Model: Nearest Neighbors
-Finally, we model price by considering the 5 nearest housing blocks, which accounts for 79% of the pricing variation in California.  For example, there is much smaller error in predictions across Los Angeles in this model.
+Finally, we model price by considering the 5 nearest housing blocks.  This model can account for 79% of the pricing variation in California.  For example, there is much smaller error in predictions across Los Angeles in this model.
 
 <img src="img/map_model_three_error.png">
 
