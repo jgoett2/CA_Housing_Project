@@ -55,4 +55,4 @@ Finally, we model price by considering the 5 nearest housing blocks, which accou
 <img src="img/map_model_three_error.png">
 
 ## Conclusion
-It turns out that the best predictor of a housing price is the average price of the 5 nearest blocks.  Since housing is often built in developments of similar housing, it makes sense that the neighborhood would have the strongest effect on housing price.
+As we can see, location is a strong predictor of housing price.  Considering just the housing prices of the 5 nearest housing blocks can account for 79% in the price variation across California.  Since housing is often built in developments of similar housing, it makes sense that the neighborhood would have the strongest effect on housing price.
