@@ -31,7 +31,7 @@ This data features of 20,000 blocks of housing in California.  Using this data, 
 <img src="img/map1.png"> 
 
 ## First Simple Model: Region of Housing
-As a simple initial model, we simply model the housing price as the average housing price for each region.  This simple model can account for 20% of the variation in housing price.
+Initially, we simply model the housing price as the average housing price for each region.  This simple model can account for 20% of the variation in housing price.
 
 | Region         |        Average Housing Price |
 |:---------------|-----------------------------:|
