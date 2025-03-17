@@ -41,16 +41,16 @@ Initially, we simply model the housing price as the average housing price for ea
 | Central Valley |                     $107,598 |
 | Other          |                     $162,839 |
 
-This model has a high error due to large variations in housing price within a region.  Below, we see the large variationin housing price in the Los Angeles Area: 
+This model has a high error due to large variations in housing price within a region.  Below, we see the large variation in housing price in the Los Angeles Area: 
 <img src="img/map_model_one_error.png">
 
-## Second Simple Model: Inverse Distance to City
-The second model models price on the distance to several desirable neighborhoods in California.  The model can account for 31% of the variation in housing price.  In the map of Los Angeles below, the errors are much smaller throughout the city.
+## Second Simple Model: Inverse Distance to Top Neighborhoods
+Next, we model price on the distance to 11 desirable neighborhoods in California.  The model can account for 31% of the variation in housing price.  Compared to model one, for example, the predictions in model two result in smaller errors and variations.
 
 <img src="img/map_model_two_error.png">
 
 ## Third Model: Nearest Neighbors
-Considering the average housing prices of the 8 nearest housing units models 79% of the pricing variation.  For example, in this map of Los Angeles, the error prediction is much smaller throughout the city.
+Finally, we model price by considering the 5 nearest housing blocks, which accounts for 79% of the pricing variation in California.  For example, there is much smaller error in predictions across Los Angeles in this model.
 
 <img src="img/map_model_three_error.png">
 
