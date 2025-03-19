@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import json
+import plotly.express as px
 
 
 # Set the title of the app
@@ -18,10 +20,6 @@ if zip_code != "":
 
 st.text("Map is loading (may take a minute...)")
 
-import pandas as pd
-from urllib.request import urlopen
-import json
-
 
 df2 = pd.read_csv("Model/price_median.csv")
 df2 = df2.rename(columns={"zip": "zip_codes"})
@@ -30,7 +28,6 @@ df2 = df2.rename(columns={"zip": "zip_codes"})
 with open("Data/ca_california_zip_codes_geo.min.json") as f:
     zip_codes = json.load(f)
 
-import plotly.express as px
 
 fig = px.choropleth(df2, geojson=zip_codes, locations="zipcode", color="housing_price", featureidkey="properties.ZCTA5CE10") 
 
