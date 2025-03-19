@@ -9,7 +9,7 @@ st.title("California Housing Prices")
 df = pd.read_csv("Model/price_median.csv")
 
 zip_code = st.text_input("Zip Code", "", )
-zip_code = zip_code.astype(int)
+zip_code = int(zip_code)
 
 
 if zip_code in df.zipcode.values:
@@ -17,7 +17,7 @@ if zip_code in df.zipcode.values:
 else:
     st.write("Zip code not found in the dataset.")
 
-
+""" 
 
 
 
@@ -64,3 +64,4 @@ fig.update_geos(fitbounds="locations", visible=True)
 fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 fig 
 
+ """
