@@ -16,7 +16,7 @@ if zip_code != "":
   else:
     st.write("Zip code not found in the dataset.")
 
-""" 
+
 
 
 
@@ -62,5 +62,3 @@ fig.update_geos(fitbounds="locations", visible=True)
 
 fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 fig 
-
- """
