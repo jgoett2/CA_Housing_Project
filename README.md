@@ -1,9 +1,12 @@
 # California Housing Project
 
-This lab shows the importance of location in the pricing of housing in California, showing that location along can account for 75% of the variation in housing prices. 
+This lab shows the importance of location in the pricing of housing in California, showing that the zip code alone can account for 75% of the variation in housing prices. 
 - The **first model** considers the house's simple geographic region and accounts for **20%** of the variation in housing price.
 - The **second model** considers the house's distance to large cities and accounts for **25%** of variation.
-- The **final model** considers the price of nearby homes and accounts for **79%** of the variation.
+- The **third model** considers the price of nearby homes and accounts for **79%** of the variation.
+- The **final model** considers the average price of the home's zip code and accounts for 92% of variation in prices statewide.
+
+A simple dashboard illustrating these findings can be found [here](https://jgoett2-ca-housing-project-streamlit-lkojud.streamlit.app/).
 
 This data features of 20,000 blocks of housing in California.  Using this data, we will determine whether location alone can account for variations in housing prices.
 
@@ -50,9 +53,14 @@ Next, we model price on the distance to 11 desirable neighborhoods in California
 <img src="img/map_model_two_error.png">
 
 ## Third Model: Nearest Neighbors
-Finally, we model price by considering the 5 nearest housing blocks.  This model can account for 79% of the pricing variation in California.  For example, there is much smaller error in predictions across Los Angeles in this model.
+We model price by considering the 5 nearest housing blocks.  This model can account for 79% of the pricing variation in California.  For example, there is much smaller error in predictions across Los Angeles in this model.
 
 <img src="img/map_model_three_error.png">
 
+## Fourth Model: Zip Codes
+We model price solely by the zip code of the home.  This model accounts for 92% of the pricing variation statewide.  To illustrate, this is very small error in the predictions of home prices across Los Angeles in this model.
+
+<img src="img/map_model_four_error.png">
+
 ## Conclusion
-As we can see, location is a strong predictor of housing price.  Considering just the housing prices of the 5 nearest housing blocks can account for 79% in the price variation across California.  Since housing is often built in developments of similar housing, it makes sense that the neighborhood would have the strongest effect on housing price.
+As we can see, location is a strong predictor of housing price.  Considering just the zip code of the home can account for 92% of the housing price variations across California.  Since housing is often built in developments of similar housing, it makes sense that the zip code would have the strongest effect on housing price.
