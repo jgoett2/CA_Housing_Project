@@ -16,31 +16,7 @@ if zip_code != "":
   else:
     st.write("Zip code not found in the dataset.")
 
-
-
-
-
-# from urllib.request import urlopen
-# import json
-
-# with open("Data/Zip_Codes.geojson") as f:
-#     zip_codes = json.load(f)
-
-
-# import plotly.graph_objects as go
-
-# df2 = pd.DataFrame({"zipcode": ["90210", "90069"], "housing_price": [10,50]})
-
-# st.write(df2.loc[0,"zipcode"])
-
-# fig = go.Figure(go.Choroplethmap(geojson=zip_codes, locations=df2.zipcode, z=df2.housing_price,
-#                                     colorscale="Viridis", zmin=0, zmax=12,
-#                                     marker_opacity=0.5, marker_line_width=0))
-# fig.update_layout(map_style="carto-positron",
-#                   map_zoom=3, map_center = {"lat": 37.0902, "lon": -95.7129})
-# fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
-# fig.show()
-
+st.text("Map is loading (may take a minute...)")
 
 import pandas as pd
 from urllib.request import urlopen
