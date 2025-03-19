@@ -9,12 +9,11 @@ st.title("California Housing Prices")
 df = pd.read_csv("Model/price_median.csv")
 
 zip_code = st.text_input("Zip Code", "", )
-zip_code = int(zip_code)
-
-
-if zip_code in df.zipcode.values:
+if zip_code != "":
+  zip_code = int(zip_code)
+  if zip_code in df.zipcode.values:
     st.write("The average housing price in", str(zip_code), "is $", str(int(df.loc[df.zipcode == zip_code,'housing_price'].values[0]*100000)))
-else:
+  else:
     st.write("Zip code not found in the dataset.")
 
 """ 
