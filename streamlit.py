@@ -8,7 +8,8 @@ st.title("California Housing Prices")
 
 df = pd.read_csv("Model/price_median.csv")
 
-zip_code = int(st.text_input("Zip Code", ""))
+zip_code = st.text_input("Zip Code", "")
+zip_code = int(zip_code)
 
 
 if zip_code in df.zipcode.values:
