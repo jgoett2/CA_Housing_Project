@@ -6,7 +6,7 @@ This lab shows the importance of location in the pricing of housing in Californi
 - The **third model** considers the price of nearby homes and accounts for **79%** of the variation.
 - The **final model** considers the average price of the home's zip code and accounts for 92% of variation in prices statewide.
 
-A simple dashboard illustrating these findings can be found [here](https://jgoett2-ca-housing-project-streamlit-lkojud.streamlit.app/).
+These findings are illustrated in a simple [Plotly Dashboard linked here](https://jgoett2-ca-housing-project-streamlit-lkojud.streamlit.app/) and a [Tableau Dashboard linked here](https://public.tableau.com/shared/ZC8B2FJSG?:display_count=n&:origin=viz_share_link).  
 
 This data features of 20,000 blocks of housing in California.  Using this data, we will determine whether location alone can account for variations in housing prices.
 
